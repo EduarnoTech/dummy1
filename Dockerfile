@@ -12,3 +12,4 @@ COPY . .
 EXPOSE 8800
 # Command to run our app
 CMD [ "node", "server.js"]
+#its 

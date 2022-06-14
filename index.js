@@ -130,6 +130,6 @@ app.use("/d6/api/agent", agentRoute6);
 app.use("/d7/api/agent", agentRoute7);
 
 const PORT = 8080
-app.listen(PORT, () => {
-  console.log("Backend server is running!", PORT);
-});
+const HOST ='0.0.0.0';
+app.listen(PORT, HOST)
+console.log("Backend server is running!", PORT);

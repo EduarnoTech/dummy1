@@ -85,7 +85,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   }
 });
 app.use("/",(req,res)=>{
-  res.send("hare krsna hare krsn krsna hare hare ")
+  res.send("hare krsna hare krsn krsna hare hare hare ram hare ram ram ram hare hare")
 });
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);

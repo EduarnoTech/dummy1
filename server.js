@@ -129,7 +129,7 @@ app.use("/d5/api/agent", agentRoute5);
 app.use("/d6/api/agent", agentRoute6);
 app.use("/d7/api/agent", agentRoute7);
 
-const PORT = 8080
+const PORT = 8080;
 const HOST ='0.0.0.0';
 app.listen(PORT, HOST)
 console.log("Backend server is running!", PORT);

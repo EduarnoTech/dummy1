@@ -84,7 +84,9 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     console.error(error);
   }
 });
-
+app.use("/",(req,res)=>{
+  res.send("hare krsna")
+});
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/alerts", alertRoute);

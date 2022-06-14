@@ -9,7 +9,7 @@ steps:
  
 # # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy','device2api', '--region=us-central1','--platform=managed', '--image=gcr.io/device2api/device2api:6d12646']
+  args: ['run', 'deploy','device2api', '--region=us-central1','--platform=managed', '--image=gcr.io/device2api/device2api:6d12646']
 # # Push the container image to Container Registry
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: ['push', 'gcr.io/device2api/device2api:$SHORT_SHA']

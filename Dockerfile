@@ -8,8 +8,8 @@ COPY package*.json ./
 RUN npm install
 # Bundle app source
 COPY . .
-# # Binding port
-# EXPOSE 8080
+# Binding port
+EXPOSE 8080
 # Command to run our app
 CMD [ "node", "server.js"]
 #its 

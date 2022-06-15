@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 8080;
+const HOST ='0.0.0.0'; 
 
 let msgs = [];
 app.use(express.static(__dirname + '/../../build'));
@@ -455,4 +456,5 @@ io.on('connection', (socket) => {
 //   console.log("payment", JSON.stringify(payments));
 // })
 
-server.listen(PORT, () => console.log('listening on port 8080...'));
+server.listen(PORT,HOST)
+console.log("running on port 8080")

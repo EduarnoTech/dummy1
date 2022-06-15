@@ -18,4 +18,4 @@ RUN npm install
 COPY . ./
 
 # start app
-CMD ["node", "src/server/index.js"]
+CMD ["npm ", "run react"]

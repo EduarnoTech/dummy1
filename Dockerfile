@@ -1,15 +1,21 @@
-# Let's get the base image of node14
+# pull the base image
 FROM node:14
-# Create app directory
-WORKDIR /usr/src/app
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY package*.json ./
-# Install app dependencies
+
+# set the working direction
+WORKDIR /src/server/index.js
+
+# # add `/app/node_modules/.bin` to $PATH
+# ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+
+COPY package-lock.json ./
+
 RUN npm install
-# Bundle app source
-COPY . .
-# Binding port
-EXPOSE 8080
-# Command to run our app
-CMD [ "node", "server.js"]
-#its 
+
+# add app
+COPY . ./
+
+# start app
+CMD ["npm", "run react"]

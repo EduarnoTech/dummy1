@@ -1,0 +1,116 @@
+.Modal {
+  overflow: auto;
+}
+.cancelbtn,
+.deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 100px 0px 0px 0px;
+  text-align: start;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 50px;
+  background-color: rgba(255, 255, 255, 0.795);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 436px; /* Could be more or less, depending on screen size */
+  height: 600px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  border: 1px solid #e0dddd;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.searchConversation {
+  width: 89%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 11px 11px 11px 15px;
+  border: 1px solid #04787c;
+  border-radius: 20px;
+  margin: 12px 0px 0px 10px;
+}
+.searchConversation:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.selected_card {
+  display: flex;
+  padding: 23px 10px 23px 40px;
+  cursor: pointer;
+  background-color: #EBEBEB;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.card {
+  display: flex;
+  padding: 23px 10px 23px 40px;
+  cursor: pointer;
+  border-bottom: 1px solid #edecec;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .deletebtn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,278 @@
+.MuiTabs-centered {
+  justify-content: space-evenly !important;
+}
+
+.sessionSearch {
+  width: 75%;
+  padding: 10px 10px 10px 12px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  /* border-bottom: 1px solid gray; */
+}
+
+.sessionSearch_1 {
+  width: 75%;
+  padding: 10px 10px 10px 12px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+}
+
+.sessionSearch:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  max-height: calc(100% - 60px) !important;
+  max-width: calc(100% - 400px) !important;
+}
+
+.css-1t4vnk2-MuiDialogContent-root {
+  padding: 0px !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 12px !important;
+}
+
+.Modal {
+  overflow: auto;
+}
+.cancelbtn,
+.deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 100px 0px 0px 0px;
+  text-align: start;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 50px;
+  background-color: rgba(255, 255, 255, 0.795);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 436px; /* Could be more or less, depending on screen size */
+  height: 600px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  border: 1px solid #e0dddd;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.searchConversation {
+  width: 89%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 11px 11px 11px 15px;
+  border: 1px solid #04787c;
+  border-radius: 20px;
+  margin: 12px 0px 0px 10px;
+}
+.searchConversation:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.selected_card {
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #e1e1e1;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #edecec;
+  justify-content: space-between;
+}
+
+.success_card {
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+  background-color: #ffeb9a;
+  border-bottom: 1px solid #ffff;
+  justify-content: space-between;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .deletebtn {
+    width: 100%;
+  }
+}
+
+.sessionlist {
+  background: linear-gradient(100deg, #48fbfb, #e4fbfb);
+  color: rgb(0, 0, 0);
+  border-radius: 7px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 50, 45, 0.16);
+  border: none;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 7px 7px 9px;
+}
+
+.live {
+  background: linear-gradient(100deg, #ffdeae, #fff5e7) !important;
+}
+
+.project {
+  background: linear-gradient(100deg, #ff5eb4, #fbe4f9) !important;
+}
+
+.notFilled {
+  background: linear-gradient(127deg, #5c5c5c, #dfdfdf) !important;
+}
+
+.userTab_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sessionMenuWrapper {
+  height: calc(100vh - 255px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 6px;
+  padding: 10px 10px 10px 10px;
+}
+
+.sessionMenuWrapper::-webkit-scrollbar-track {
+  background-color: #ffff;
+}
+.sessionMenuWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes up-right {
+  0% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale (1, 5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+}
+.circle {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  opacity: 0.25;
+}
+.red {
+  background-color: #18e761;
+  margin: 1px 4px;
+  -webkit-animation: up-right 1s infinite;
+  -moz-animation: up-right 1s infinite;
+  -o-animation: up-right 1s infinite;
+  animation: up-right 1s infinite;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.color_red {
+  color: red;
+}
+
+.color_blue {
+  color: #2900ff;
+}
+
+.color_pink {
+  color: #999507;
+}
+
+.color_green {
+  color: #2e7d32;
+}
+
+.dateRange {
+  outline: none;
+  border: 1px solid #b3b1b1;
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 95px;
+}
+
+.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input {
+  background: none;
+}

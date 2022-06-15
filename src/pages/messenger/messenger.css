@@ -1,0 +1,368 @@
+.messenger {
+  height: calc(100vh - 0px);
+  display: flex;
+  background-color: #1d606bfc;
+  /* padding: 20px 150px 20px 150px; */
+}
+
+.chatMenu {
+  flex: 2.8;
+  height: 100%;
+  /* padding: 0px 0px 15px 0px; */
+  background-color: #ffff;
+  border-right: 1px solid #d8d6d6;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+}
+
+.chatMenu2 {
+  flex: 3;
+  height: 100%;
+  /* padding: 0px 0px 15px 0px; */
+  background-color: #ffff;
+  border-right: 1px solid #d8d6d6;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+}
+
+select {
+  width: 50%;
+  border: none;
+  padding: 5px 0px 5px 6px;
+  color: #222;
+  border-radius: 4px;
+  font-family: sans-serif;
+  outline: none;
+}
+.select-list2 {
+  width: 100%;
+  border: none;
+  padding: 5px 0px 5px 6px;
+  color: #222;
+  border-radius: 4px;
+  margin-left: 12px;
+  font-family: sans-serif;
+}
+
+.chat_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.55rem;
+  background-color: #EDEDED;
+  padding: 0px 25px 0px 20px;
+}
+
+.chat_header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.55rem;
+  background-color: #EDEDED;
+  /* padding: 0px 25px 0px 20px; */
+  border-left: 1px solid lightgray;
+}
+
+.currentChatHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.55rem;
+  background-color: #EDEDED;
+  padding-left: 20px;
+}
+
+.template {
+  height: 5.6rem;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 10px 10px 12px;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  /* border-bottom: 1px solid gray; */
+}
+
+.chatMenuInput:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.addContactInput {
+  width: 90%;
+  padding: 10px 10px 10px 12px;
+  border: 1px solid darkgray;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  /* border-bottom: 1px solid gray; */
+}
+
+.addContactInput {
+  -moz-appearance: textfield;
+}
+.addContactInput::-webkit-inner-spin-button {
+  display: none;
+}
+.addContactInput::-webkit-outer-spin-button,
+.addContactInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addContactInput:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.chatBox {
+  flex: 5;
+  background-color: #E0D9D1;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  position: absolute;
+  margin-top: 58px;
+  margin-bottom: 69px;
+  /* height: 82.6%; */
+  height: -webkit-fill-available;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px 20px 20px 20px;
+  width: -webkit-fill-available;
+}
+
+.chatBoxTop::-webkit-scrollbar-track {
+  background-color: #E0D9D1;
+}
+
+.chatBoxBottom {
+  position: relative;
+  margin-top: 0px;
+  /* margin-bottom: -17px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* height: 4.3rem; */
+  background-color: #f0f0f0;
+}
+
+.chatMessageInput {
+  width: 73%;
+  height: 23px;
+  padding: 13px 12px 10px 15px;
+  border: 1px solid #ffff;
+  border-radius: 20px;
+  margin-left: 8px;
+  /* resize: none; */
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.chatMessageInput:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.chatSubmitButton {
+  /* width: 70px;
+  height: 40px; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #9B9B9B;
+}
+
+.attachButton {
+  transform: rotate(45deg);
+  color: #9B9B9B;
+  cursor: pointer;
+}
+
+.micButton {
+  color: #9B9B9B;
+  cursor: pointer;
+}
+
+.templateMsg {
+  color: #9B9B9B;
+  cursor: pointer;
+}
+
+.chatOnline {
+  flex: 3;
+  background-color: #ffff;
+}
+
+.moreOption {
+  cursor: pointer;
+  color: #888787;
+}
+
+.chatMenuWrapper {
+ height: calc(100vh - 135px);
+ overflow-y: scroll;
+ overflow-x: hidden;
+ margin-top: 0px;
+ padding: 10px 0px 10px 0px;
+}
+
+.chatMenuWrapper::-webkit-scrollbar-track {
+  background-color: #ffff;
+}
+
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  /* padding: 10px 0px 10px 10px; */
+  height: 100%;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}
+
+.attachInput {
+  position: absolute;
+  margin-left: -27px;
+  cursor: pointer;
+  width: 24px;
+  height: 0px;
+  opacity: 0;
+  padding: 25px 5px 0px 2px;
+}
+
+.attachFile {
+  cursor: pointer;
+}
+
+.templateCard {
+  padding: 10px 25px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.templateCard:hover {
+  background-color: #c9eaf8;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    flex: 1;
+  }
+
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox{
+    flex: 10;
+  }
+
+  .chatOnline{
+    flex: 1px;
+  }
+}
+
+.loadingIcon {
+  margin-left: 340px;
+}
+
+.modal_ {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 50px;
+  /* background-color: rgba(255, 255, 255, 0.795); */
+}
+
+/* Modal Content/Box */
+.modal-content_ {
+  background-color: #fefefe;
+  margin: 34% auto 25% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 436px; /* Could be more or less, depending on screen size */
+  height: 95px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  border: 1px solid #e0dddd;
+}
+
+.no_message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.no_messageText {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: #53525273;
+  color: #ffff;
+  max-width: 300px;
+  text-align: center;
+}
+
+.select-list {
+  display: flex;
+  justify-content: center;
+}
+
+.forward_final {
+  font-size: 30px !important;
+  transform: scaleX(-1);
+  cursor: pointer;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.forward_final_hide {
+  font-size: 30px !important;
+  transform: scaleX(-1);
+  cursor: pointer;
+  margin-right: 18px;
+  visibility: hidden;
+}
+
+.errMsgText {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.css-1i5alow-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+  background-color: transparent !important;
+  width: 0px !important;
+}
+
+.css-md8nuk {
+  background-color: transparent !important;
+  width: 0px !important;
+}

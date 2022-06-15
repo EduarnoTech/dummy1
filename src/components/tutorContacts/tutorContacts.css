@@ -1,0 +1,65 @@
+.tutorlist {
+    display: block;
+    align-items: center;
+    padding: 10px 10px 10px 16px;
+    /* cursor: pointer; */
+    /* margin-top: 20px; */
+    /* border-radius: 7px; */
+    border-bottom: 1px solid rgb(236, 234, 234);
+    height: -webkit-fill-available;
+  }
+  .conversationDetails {
+    display: block;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 10px 10px 10px 16px;
+    /* margin-top: 20px; */
+    /* border-radius: 7px; */
+    border-bottom: 1px solid rgb(236, 234, 234);
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .highlighted {
+    background-color: #9DE1FE;
+  }
+  
+  .tutorlist:hover {
+    background-color: #9DE1FE;
+  }
+  
+  .conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: 8px;
+    background-color: #5e8de7 !important;
+  }
+  .userTab{
+    display: flex;
+  }
+  .conversationName {
+    font-weight: 500;
+    margin-top: 6px;
+    height: 30px;
+  }
+  .alert {
+    display: block;
+  }
+  .no_alert {
+    display: none;
+  }
+  .usertag {
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 7px;
+    color: #f16c0b;
+  }
+  @media screen and (max-width: 768px) {
+    .conversationName {
+      display: none;
+    }
+  }
+  

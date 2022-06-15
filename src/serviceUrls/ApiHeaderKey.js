@@ -1,0 +1,7 @@
+let api_key = localStorage.getItem("api_key");
+export const headerKey = {
+  'Content-Type': 'application/json',
+  // Authorization:
+  //   'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxMTYyMWZkZi0wYjJjLTQxYzAtOWZmMS1iZDk5NWZmYTQ2ZTUiLCJ1bmlxdWVfbmFtZSI6Im9mZmljZUB0dXRvcnBvaW50LmluIiwibmFtZWlkIjoib2ZmaWNlQHR1dG9ycG9pbnQuaW4iLCJlbWFpbCI6Im9mZmljZUB0dXRvcnBvaW50LmluIiwiYXV0aF90aW1lIjoiMDgvMDQvMjAyMSAwODoxMTowMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjI1MzQwMjMwMDgwMCwiaXNzIjoiQ2xhcmVfQUkiLCJhdWQiOiJDbGFyZV9BSSJ9.lSSh1EL29ksj23Y_rTSrLhYVwhOFyddK1c6bKU-_HB4',
+  'D360-API-KEY': api_key,
+};

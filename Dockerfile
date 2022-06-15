@@ -16,6 +16,8 @@ RUN npm install
 
 # add app
 COPY . ./
+# Binding port
+EXPOSE 3000
 
 RUN npm run build
 # start app

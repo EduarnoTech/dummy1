@@ -17,8 +17,8 @@ RUN npm install
 # add app
 COPY . ./
 # Binding port
-EXPOSE 3000
+EXPOSE 8080
 
-RUN npm run build
+# RUN npm run build
 # start app
 CMD ["npm ", "run react"]

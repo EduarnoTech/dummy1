@@ -28,6 +28,10 @@ let interestedTutors = [];
 let paypalPayments = [];
 let newSession = [];
 
+app.use('/',(req,res)=>{
+  res.send("hare krsna hare krsna")
+})
+
 io.on('connection', (socket) => {
   //when connect
   console.log('a user connected.', socket.id);

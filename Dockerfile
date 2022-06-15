@@ -15,10 +15,10 @@ COPY package-lock.json ./
 RUN npm install
 
 # add app
-COPY . ./
-# # Binding port
-# EXPOSE 8080
+COPY . .
+# Binding port
+EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["node ", "src/server/index.js"]
+CMD ["node", "src/server/index.js"]

@@ -2,7 +2,7 @@
 FROM node:14
 
 # set the working direction
-WORKDIR /src/server/index.js
+WORKDIR /src/server
 
 # # add `/app/node_modules/.bin` to $PATH
 # ENV PATH /app/node_modules/.bin:$PATH
@@ -18,4 +18,4 @@ RUN npm install
 COPY . ./
 
 # start app
-CMD ["npm", "run react"]
+CMD ["node", "src/server/index.js"]

@@ -29,7 +29,7 @@ let paypalPayments = [];
 let newSession = [];
 
 app.use('/',(req,res)=>{
-  res.send("hare krsna hare krsna KRSNA KRSNA")
+  res.send("hare krsna hare krsna KRSNA KRSNA Ram Ram")
 })
 
 io.on('connection', (socket) => {

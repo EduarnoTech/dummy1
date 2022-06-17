@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const PORT = 8080;
+const PORT =process.env.PORT || 8080;
 const HOST ='0.0.0.0'; 
 
 let msgs = [];

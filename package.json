@@ -23,6 +23,7 @@
     "getmac": "^5.20.0",
     "moment": "^2.29.3",
     "nodemon": "^2.0.12",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-audio-player": "^0.17.0",
     "react-awesome-modal": "^2.0.5",

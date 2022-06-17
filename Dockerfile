@@ -16,9 +16,9 @@ RUN npm install
 
 # add app
 COPY . .
-# # Binding port
-# EXPOSE 8080
+# Binding port
+EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "run build:gcp"]

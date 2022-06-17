@@ -28,9 +28,9 @@ let interestedTutors = [];
 let paypalPayments = [];
 let newSession = [];
 
-app.use('/',(req,res)=>{
-  res.send("hare krsna hare krsna KRSNA KRSNA Ram Ram final test1234")
-})
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 io.on('connection', (socket) => {
   //when connect

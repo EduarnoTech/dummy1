@@ -21,4 +21,4 @@ EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["npm", "build:gcp"]
+CMD ["npm", "run build:gcp"]

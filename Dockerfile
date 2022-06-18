@@ -14,10 +14,12 @@ COPY package-lock.json ./
 
 RUN npm install
 
-RUN npm run build
+RUN npm ci --silent
+RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
 COPY . .
+RUN npm run build
 # Binding port
 EXPOSE 8080
 

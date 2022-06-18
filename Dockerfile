@@ -14,6 +14,8 @@ COPY package-lock.json ./
 
 RUN npm install
 
+RUN npm run build
+
 # add app
 COPY . .
 # Binding port
@@ -21,4 +23,4 @@ EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["npm", "run build:gcp"]
+CMD ["npm", "start"]

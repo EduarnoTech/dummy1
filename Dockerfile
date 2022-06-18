@@ -19,10 +19,10 @@ RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
 COPY . .
-RUN npm run build
+# RUN npm react-scripts build
 # Binding port
 EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "run","build:gcp"]

@@ -23,6 +23,6 @@ COPY . .
 # Binding port
 EXPOSE 8080
 
-# RUN npm run build
+RUN npm run build
 # start app
-CMD ["npm", "run","build:gcp"]
+CMD ["npm", "start"]

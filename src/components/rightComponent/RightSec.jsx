@@ -247,7 +247,7 @@ const RightSec = ({newSessions, interestedTutors, clientPayment, tutorPayout}) =
           }}
           onClick={handleSessionTab}
         >
-          Sessions12
+          Sessions123
         </div>
         <div
           style={{

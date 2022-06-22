@@ -17,7 +17,7 @@ const PORT = 8080;
 const HOST ='0.0.0.0'; 
 
 let msgs = [];
-app.use(express.static(__dirname + '/../../build'));
+// app.use(express.static(__dirname + '/../../build'));
 
 let _agent;
 let _device;

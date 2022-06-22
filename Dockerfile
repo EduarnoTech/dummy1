@@ -25,4 +25,4 @@ EXPOSE 8080
 
 # RUN npm run build
 # start app
-CMD ["npm", "start"]
+CMD ["node", "src/server/index.js"]

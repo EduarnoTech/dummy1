@@ -15,7 +15,7 @@ COPY package.json ./
 RUN npm install
 
 # RUN npm ci --silent
-RUN npm install react-scripts@3.4.1 -g --silent
+# RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
 COPY . .
@@ -23,6 +23,6 @@ COPY . .
 # Binding port
 EXPOSE 8080
 
-RUN npm run build
+# RUN npm run build
 # start app
 CMD ["npm", "start"]

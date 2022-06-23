@@ -30,8 +30,8 @@ let paypalPayments = [];
 let newSession = [];
 
 app.get('/', function(req, res) {
-  res.send("got it to")
-  // res.sendFile(path.join(__dirname + '/../../build','index.html'));
+  // res.send("got it to")
+  res.sendFile(path.join(__dirname + '/../../build','index.html'));
   // res.sendFile(path.join('public', 'index.html'));
 });
 
